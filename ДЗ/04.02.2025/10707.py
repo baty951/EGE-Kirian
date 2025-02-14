@@ -15,4 +15,5 @@ for n in range(10**4):
     r = int(x, 6)
     if r > 680:
         print(r)
-        break #ответ 694
+        break
+        #ответ 694

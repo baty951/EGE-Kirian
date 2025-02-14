@@ -9,4 +9,5 @@ for n in range(10**5):
         x = x + "0" + f(x)
     r = int(x, 2)
     if r < 256:
-        print(f"n : {n}, r : {r}") #ответ 28
+        print(f"n : {n}, r : {r}")
+        #ответ 28
