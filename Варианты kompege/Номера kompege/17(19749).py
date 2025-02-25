@@ -1,15 +1,11 @@
-massive = list()
-f = [massive.append(int(x[:-1])) for x in list(open("17(19749).txt"))]
+massive = [int(x[:-1]) for x in list(open("17(19749).txt"))]
 mx = max(massive)%7
 mn = min(massive)%3
 count = 0
 ans = 0
 
 for x in range(1, len(massive)-1):
-    a = massive[x-1]
-    b = massive[x]
-    c = massive[x+1]
-    s = (a,b,c)
+    s = (massive[x-1],massive[x],massive[x+1])
     k3 = 0
     k7 = 0
     for i in s:
