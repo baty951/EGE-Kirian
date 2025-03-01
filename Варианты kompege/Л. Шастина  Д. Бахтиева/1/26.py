@@ -1,9 +1,5 @@
-file = open("26.txt").readlines()
-for x in range(len(file)):
-    file[x] = file[x][:-1]
-first_str = file[0].split(" ")
-del(file[0])
-mass = int(first_str[-1])*1000
+file = [int(x[:-1]) for x in open("26.txt")]
+mass = 835*1000
 massive = list()
 for x in file:
     massive.append(x)
